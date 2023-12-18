@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #182737;
+  /* Darker background color */
+  color: #FFF;
+  font-family: "Fira sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #374151;
+  /* Darker header background color */
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #FFF;
+  /* White text color for the header elements */
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#logout-button {
+  background-color: #EF4444;
+  /* Dark red background for the Logout button */
+  color: #FFF;
+  /* White text color for the Logout button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout-button:hover {
+  background-color: #FF6B6B;
+  /* Lighter red on button hover */
+}
+
+a {
+  text-decoration: none;
+  color: #b6b4b4;
+  /* White text color for links */
+}
+
+#nav-list {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  background-color: #2D3748;
+  /* Darker task background color */
+  margin-bottom: 20px;
+  padding: 0 15px;
+  border-radius: 1rem;
+  /* Rounded corners */
+  transition: 0.4s;
+}
+
+.task:hover {
+  background-color: #4A5568;
+  /* Darker background on hover */
+}
+
+.task-icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.fa-circle-plus {
+  margin: 15px;
+  font-size: 3em;
+  color: #EF4444;
+  /* Dark red color */
+}
+
+.clicked.fa-square-check {
+  color: #22C55E;
+  /* Light green color */
+}
+
+.fa-square-check:hover {
+  cursor: pointer;
+}
+
+.fa-pencil:hover {
+  color: #E2DF00;
+  /* Yellow color on hover */
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  color: #EF4444;
+  /* Dark red color on hover */
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.high-priority {
+  background-color: #EF4444;
+  /* Dark red for high-priority */
+}
+
+.med-priority {
+  background-color: #FFD700;
+  /* Gold for medium-priority */
+}
+
+.low-priority {
+  background-color: #00D700;
+  /* Bright green for low-priority */
+}
+
+.invisible {
+  display: none;
+}
+
+nav > a.active {
+  background-color: #2D3748;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
